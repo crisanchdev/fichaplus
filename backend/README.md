@@ -14,7 +14,7 @@ Este directorio está destinado a contener la API del proyecto utilizando **Lara
    composer create-project laravel/laravel backend-api
    cd backend-api
    ```
-2. Copiar el archivo `.env.example` a `.env` y configurar las variables de conexión a MariaDB:
+2. Copiar el archivo `.env.example` (se incluye uno de muestra en este directorio) a `.env` y configurar las variables de conexión a MariaDB:
    ```env
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
