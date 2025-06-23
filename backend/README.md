@@ -9,17 +9,21 @@ Este directorio está destinado a contener la API del proyecto utilizando **Lara
 
 ## Pasos iniciales
 
+
 1. Crear el proyecto e ingresar al directorio:
+
    ```bash
    composer create-project laravel/laravel backend-api
    cd backend-api
-   ```
-2. Copiar el archivo `.env.example` a `.env`, configurar las variables de conexión a MariaDB e instalar las dependencias:
-   ```bash
-   cp .env.example .env
-   composer install
-   ```
-   Luego edita los valores de `DB_DATABASE`, `DB_USERNAME` y `DB_PASSWORD` en el archivo `.env`.
+2. Copiar el archivo `.env.example` (se incluye uno de muestra en este directorio) a `.env` y configurar las variables de conexión a MariaDB:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=fichaplus
+   DB_USERNAME=usuario
+   DB_PASSWORD=clave
+
 3. Generar la clave de la aplicación:
    ```bash
    php artisan key:generate
@@ -32,6 +36,7 @@ Este directorio está destinado a contener la API del proyecto utilizando **Lara
    ```bash
    php artisan serve
    ```
+
 
 ## Estructura sugerida
 - `app/Models` para los modelos de Eloquent (por ejemplo, `Cliente`, `Documento`).

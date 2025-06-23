@@ -56,8 +56,11 @@ En la carpeta [`backend`](backend/) se incluyen las instrucciones para poner en 
 
 1. Instala PHP \(>=8.1\), Composer y MariaDB.
 2. Crea el proyecto dentro de la carpeta `backend` siguiendo la guía de [`backend/README.md`](backend/README.md).
+
 3. Configura las credenciales de base de datos en el archivo `.env` y ejecuta `composer install`.
 4. Genera la clave de la aplicación con `php artisan key:generate`.
 5. Ejecuta las migraciones con `php artisan migrate` y levanta el servidor con `php artisan serve`.
+6. Ejecuta las migraciones con `php artisan migrate` y levanta el servidor con `php artisan serve`.
+
 
 La aplicación React consumirá estos endpoints, reemplazando los datos de ejemplo actualmente almacenados en `src/mock`.
